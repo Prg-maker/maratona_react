@@ -1,8 +1,12 @@
 import {useFonts,   Roboto_400Regular , Roboto_700Bold} from '@expo-google-fonts/roboto'
-import { SingIn } from './src/screens/SingIn';
-import {NativeBaseProvider} from 'native-base'
+import {NativeBaseProvider , StatusBar} from 'native-base'
+
 import {THEME}  from './src/styles/theme'
+
 import {Loading} from './src/components/Loading'
+
+import { SingIn } from './src/screens/SingIn';
+import { Home } from './src/screens/Home';
 
 
 export default function App() {
@@ -15,7 +19,14 @@ export default function App() {
   return (
 
     <NativeBaseProvider theme={THEME}>
-     { fontsLoading?  <SingIn/> : <Loading/>}
+      <StatusBar
+        barStyle={'light-content'}
+        backgroundColor="transparent"
+        translucent
+      />
+
+     { fontsLoading?  <Home/> : <Loading/>}
+
     </NativeBaseProvider>
 
   );
