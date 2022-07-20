@@ -7,6 +7,7 @@ import {Loading} from './src/components/Loading'
 
 import { SingIn } from './src/screens/SingIn';
 import { Home } from './src/screens/Home';
+import { Register } from './src/screens/Register';
 
 
 export default function App() {
@@ -25,7 +26,7 @@ export default function App() {
         translucent
       />
 
-     { fontsLoading?  <Home/> : <Loading/>}
+     { fontsLoading?  <Register/> : <Loading/>}
 
     </NativeBaseProvider>
 
