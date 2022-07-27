@@ -18,6 +18,7 @@ import { Filter } from "../components/Filter";
 import { Order , OrderProps } from "../components/Order";
 import { Button } from "../components/Button";
 
+import {useNavigation} from '@react-navigation/native'
 
 
 export function Home() {
@@ -25,9 +26,24 @@ export function Home() {
 
   const [statusSelected , setStatusSelected] = useState<'open' | 'closed'>('open')
   const [orders , setOrders] = useState<OrderProps[]>([
-   
+    {
+      id:"45", 
+      patrimony:"12",
+      status:"open",
+      when:"20/20/2020"
+    }
   ])
 
+  const navigation = useNavigation()
+  function handleNewOrder(){
+    navigation.navigate('new')
+  }
+
+  function handleOpenDetails(orderId:string){
+    navigation.navigate('details', {
+      orderId
+    })
+  }
 
   return (
     <VStack flex={1} pb={6} bg="gray.700">
@@ -78,7 +94,7 @@ export function Home() {
       <FlatList
         data={orders}
         keyExtractor={item=> item.id}
-        renderItem={({item})=> <Order data={item} />}
+        renderItem={({item})=> <Order  data={item}  onPress={()=> handleOpenDetails(item.id)}/>}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{paddingBottom:10}}
         ListEmptyComponent={
@@ -93,6 +109,7 @@ export function Home() {
       />
       <Button
         title="Nova solicitação"
+        onPress={handleNewOrder}
       />
       </VStack>
    

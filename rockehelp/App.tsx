@@ -5,10 +5,7 @@ import {THEME}  from './src/styles/theme'
 
 import {Loading} from './src/components/Loading'
 
-import { SingIn } from './src/screens/SingIn';
-import { Home } from './src/screens/Home';
-import { Register } from './src/screens/Register';
-import { Details } from './src/screens/Details';
+import { Routes } from './src/routes' 
 
 
 export default function App() {
@@ -27,7 +24,7 @@ export default function App() {
         translucent
       />
 
-     { fontsLoading?  <Details/> : <Loading/>}
+     { fontsLoading?  <Routes/> : <Loading/>}
 
     </NativeBaseProvider>
 
