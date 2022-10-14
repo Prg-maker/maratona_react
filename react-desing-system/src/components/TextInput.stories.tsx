@@ -20,18 +20,23 @@ export default {
 
   },
   argTypes: {
- 
-  }
-} as Meta<TextInputRootProps>
-
-
-export const CustomComponent : StoryObj<TextInputRootProps> = {
-  argTypes:{
     children:{
       table:{
         disable:true
       }
     },
-  
+  }
+} as Meta<TextInputRootProps>
+
+
+export const CustomComponent : StoryObj<TextInputRootProps> = {}
+
+
+export const Default : StoryObj<TextInputRootProps> = {
+  args:{
+    children:(
+      <TextInput.Input placeholder='type your e-mail address'/>
+    )
   }
 }
+
