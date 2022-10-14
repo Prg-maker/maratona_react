@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "657357625714",
+    "project_id": "ignitelab-rockehelp",
+    "storage_bucket": "ignitelab-rockehelp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657357625714:android:146255a5aa32742fc925eb",
+        "android_client_info": {
+          "package_name": "com.rockehelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657357625714-b6n53sgfjhin058f3qfgkrn6arfbc3s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzVzZamAQm8oo7n32RTM1Co6koof_p0Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657357625714-b6n53sgfjhin058f3qfgkrn6arfbc3s5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "657357625714-lvi5snitha9cpp0n3oaq29sgmsvdq98k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rockehelp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>657357625714-lvi5snitha9cpp0n3oaq29sgmsvdq98k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.657357625714-lvi5snitha9cpp0n3oaq29sgmsvdq98k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyATqCUwfP6U15QOGUrtiES4V1I6c25wQ7E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>657357625714</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rockehelp</string>
+	<key>PROJECT_ID</key>
+	<string>ignitelab-rockehelp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ignitelab-rockehelp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:657357625714:ios:05cfb995df3c4201c925eb</string>
+</dict>
+</plist>
