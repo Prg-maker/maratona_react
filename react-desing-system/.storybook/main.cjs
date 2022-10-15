@@ -14,5 +14,12 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
+  },
+  viteFile:(config , {configType})=> {
+    if(configType === 'PRODUCTION'){
+      config.base = '/maratona_react/tree/main/react-desing-system/'
+    }
+
+    return config
   }
 }
